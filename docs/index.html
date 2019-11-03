@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fraud Buster</title>
+    <style>
+      body {margin: 0;}
+      .center {
+        margin: auto;
+        width: 65%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .mycanvas {
+        width: 640px;
+        height: 480px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="info" style="position:absolute;background:white" ></h2>
+    <div class="center">
+      <video id="video" width="640" height="480" autoplay></video>
+    </div>
+    <div class="center">
+      <button id="snap" class="button">Snap Photo</button>
+      <input  class="button" type="file" accept="image/*" id="file-input">
+    </div>
+    <div class="center">
+      <canvas id="canvas-snap" width="640" height="480"></canvas>
+    </div>
+    <div class="center">
+      <button id="sign" class="button">Sign Photo</button>
+    </div>
+    <div class="center">
+      <canvas id="canvas-sign" width="4032" height="3024" class="mycanvas"></canvas>
+    </div>
+    <div class="center">
+      <button id="download" class="button">Download Photo</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
